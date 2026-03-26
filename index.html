@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit Agarwal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav id="navbar">
+    <div class="nav-container">
+        <a href="#hero" class="nav-name">Rohit Agarwal</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#papers">Papers</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#competitions">Math Outreach</a></li>
+            <li><a href="#notes">Course Notes</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="hero">
+    <div class="hero-container">
+        <div class="hero-text">
+            <h1>Rohit Agarwal</h1>
+            <p class="hero-subtitle">PhD Student in Computer Science</p>
+            <p class="hero-affiliation">Princeton University</p>
+            <p class="hero-description">
+                I work on <strong>mathematics for AI</strong> and the <strong>alignment of AI agents</strong>.
+                I am advised by <a href="https://www.ehazan.com/" target="_blank">Elad Hazan</a>
+                and also collaborate with <a href="https://www.cs.princeton.edu/~arora/" target="_blank">Sanjeev Arora</a>.
+            </p>
+            <p class="hero-description">
+                Previously, I graduated from <strong>UC Berkeley</strong> with a B.S. in EECS (Honors) and a minor in Mathematics, with a 4.0 GPA and Highest Honors.
+            </p>
+            <div class="hero-links">
+                <a href="mailto:ra1336@cs.princeton.edu" class="btn">Email</a>
+                <a href="https://scholar.google.com/citations?user=lYEHg98AAAAJ&hl=en" target="_blank" class="btn">Google Scholar</a>
+                <a href="https://github.com/girantinas" target="_blank" class="btn">GitHub</a>
+                <a href="https://www.linkedin.com/in/rohit-agarwal-b647951ba/" target="_blank" class="btn">LinkedIn</a>
+            </div>
+        </div>
+        <div class="hero-photo">
+            <img src="photo.jpg" alt="Rohit Agarwal" class="profile-photo">
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+    <div class="container">
+        <h2>About</h2>
+        <div class="about-content">
+            <p>
+                I am a PhD student in the <a href="https://www.cs.princeton.edu/" target="_blank">Department of Computer Science</a> at
+                <a href="https://www.princeton.edu/" target="_blank">Princeton University</a>.
+                My research lies at the intersection of mathematics and machine learning. Specifically, I am interested in:
+            </p>
+            <ul class="research-interests">
+                <li>Building new optimizers grounded in control theory that are state-of-the-art for diverse workloads, including the pretraining of large language models.</li>
+                <li>Using LLMs for assisting in proof-based mathematics and olympiad problems, including efficient inference pipelines for competition math.</li>
+                <li>The alignment and safety of AI agents, particularly understanding misalignment through theoretical frameworks.</li>
+            </ul>
+            <p>
+                Before Princeton, I was at UC Berkeley, where I worked with
+                <a href="https://www.cs.cmu.edu/~venMDat/" target="_blank">Venkatesan Guruswami</a> on approximation algorithms and promise CSPs,
+                in the <a href="https://slice.eecs.berkeley.edu/" target="_blank">SLICE Lab</a> with Vighnesh Iyer and Bora Nikolic on hardware verification,
+                and at <a href="https://www.lbl.gov/" target="_blank">Lawrence Berkeley National Laboratory</a> on muon collider physics.
+            </p>
+
+            <h3>Awards</h3>
+            <ul class="awards-list">
+                <li>Princeton First-Year Fellowship</li>
+                <li>EECS Citation Award (#1 out of 720 graduates)</li>
+                <li>Regents' and Chancellor's Scholar (UC Berkeley)</li>
+                <li>Engineering Dean's List (8 semesters)</li>
+                <li>Outstanding GSI &amp; EECS Outstanding TA</li>
+                <li>Berkeley Integration Bee Medalist</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Papers Section -->
+<section id="papers">
+    <div class="container">
+        <h2>Papers</h2>
+
+        <h3 class="papers-category">Selected Papers in AI</h3>
+
+        <div class="paper">
+            <div class="paper-title">Escaping the Cognitive Well: Efficient Competition Math with Off-the-Shelf Models</div>
+            <div class="paper-authors">Xingyu Dang*, <strong>Rohit Agarwal</strong>*, Rodrigo Porto, Anirudh Goyal, Liam H. Fowl*, Sanjeev Arora</div>
+            <div class="paper-note">* denotes equal contribution</div>
+            <div class="paper-venue">Submitted to ICML 2026</div>
+            <div class="paper-description">
+                An inference pipeline achieving state-of-the-art on IMO-ProofBench Advanced (67.1%) using off-the-shelf models at ~$31/problem.
+                Introduces the concept of the "Cognitive Well" and addresses it through conjecture extraction and context detachment.
+            </div>
+            <div class="paper-links">
+                <a href="https://arxiv.org/abs/2602.16793" target="_blank">[arXiv]</a>
+                <a href="https://arxiv.org/html/2602.16793v1" target="_blank">[HTML]</a>
+            </div>
+        </div>
+
+        <h3 class="papers-category">Other Computer Science</h3>
+
+        <div class="paper">
+            <div class="paper-title">Hardness of Approximation for 2 &rarr; 4 Norms through Quantum Reductions</div>
+            <div class="paper-authors"><strong>Rohit Agarwal</strong>, Axel Li, et al.</div>
+            <div class="paper-venue">Berkeley Technical Report EECS-2023-236 (Class project, CS270/CS191)</div>
+            <div class="paper-links">
+                <a href="http://www2.eecs.berkeley.edu/Pubs/TechRpts/2023/EECS-2023-236.html" target="_blank">[Report]</a>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="paper-title">Packed Memory Arrays for Dynamic Graphs in the Distributed Memory Setting</div>
+            <div class="paper-authors"><strong>Rohit Agarwal</strong>, Alec James, Joshua You</div>
+            <div class="paper-venue">Berkeley Technical Report EECS-2023-235 (Class project, CS267)</div>
+            <div class="paper-links">
+                <a href="http://www2.eecs.berkeley.edu/Pubs/TechRpts/2023/EECS-2023-235.html" target="_blank">[Report]</a>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="paper-title">New Embedded DSLs for Hardware Design and Verification</div>
+            <div class="paper-authors"><strong>Rohit Agarwal</strong>, Vighnesh Iyer, et al.</div>
+            <div class="paper-venue">Presented at PLARCH 2023 (co-located with PLDI 2023)</div>
+            <div class="paper-links">
+                <a href="https://tinyurl.com/plarch-fuzz" target="_blank">[Paper]</a>
+            </div>
+        </div>
+
+        <h3 class="papers-category">Physics</h3>
+
+        <div class="paper">
+            <div class="paper-title">Towards a Muon Collider</div>
+            <div class="paper-authors">Carlotta Accettura, <strong>Rohit Agarwal</strong>, et al.</div>
+            <div class="paper-venue">European Physical Journal C (2023). Part of the URAP program at Lawrence Berkeley National Lab.</div>
+            <div class="paper-links">
+                <a href="https://doi.org/10.1140/epjc/s10052-023-11889-x" target="_blank">[DOI]</a>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="paper-title">Muon Collider Forum Report</div>
+            <div class="paper-authors">K.M. Black, <strong>Rohit Agarwal</strong>, et al.</div>
+            <div class="paper-venue">arXiv:2209.01318 (2022). Part of the URAP program.</div>
+            <div class="paper-links">
+                <a href="https://arxiv.org/abs/2209.01318" target="_blank">[arXiv]</a>
+            </div>
+        </div>
+
+        <h3 class="papers-category">Talks &amp; Posters</h3>
+
+        <div class="paper">
+            <div class="paper-title">Parametric Stimulus Generators for Controllable RTL Fuzzing</div>
+            <div class="paper-authors"><strong>Rohit Agarwal</strong>, Vighnesh Iyer</div>
+            <div class="paper-venue">UC Berkeley SLICE Lab Summer Retreat, 2023</div>
+            <div class="paper-links">
+                <a href="https://github.com/vighneshiyer/publications/blob/master/posters/posters/2023-slice_summer-fuzzing/2023-slice_summer-fuzzing.pdf" target="_blank">[Poster]</a>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="paper-title">A Packed-Memory Data Structure for Distributed Graph Streaming</div>
+            <div class="paper-authors"><strong>Rohit Agarwal</strong>, Joshua You</div>
+            <div class="paper-venue">UC Berkeley SLICE Lab Summer Retreat, 2023</div>
+            <div class="paper-links">
+                <a href="https://github.com/vighneshiyer/publications/blob/master/posters/posters/2023-slice_summer-distpcsr/2023-slice_summer-distpcsr.pdf" target="_blank">[Poster]</a>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="paper-title">Improving Verification Infrastructure for Chisel RTL</div>
+            <div class="paper-authors"><strong>Rohit Agarwal</strong>, Vighnesh Iyer</div>
+            <div class="paper-venue">UC Berkeley SLICE Lab Winter Retreat, 2023</div>
+        </div>
+
+        <div class="paper">
+            <div class="paper-title">Using Cluster Shape for Beam-Background Suppression in a Future Muon Collider Experiment</div>
+            <div class="paper-authors"><strong>Rohit Agarwal</strong>, Elodie Resseguie, Simone Pagan Griso, Paolo Andreetto, Alessio Gianelle</div>
+            <div class="paper-venue">European Physical Society Conference on High-Energy Physics (EPS-HEP), 2021</div>
+            <div class="paper-links">
+                <a href="https://tinyurl.com/mucol" target="_blank">[Talk]</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Teaching Section -->
+<section id="teaching">
+    <div class="container">
+        <h2>Teaching</h2>
+        <p class="section-intro">
+            I love teaching and have been fortunate to be involved in it extensively.
+            At Berkeley, I received an average student rating of <strong>4.95/5</strong> (0.64 above the departmental average)
+            and was recognized with the <strong>Outstanding GSI</strong> and <strong>EECS Outstanding TA</strong> awards.
+        </p>
+
+        <h3>AddisCoder</h3>
+        <div class="teaching-entry">
+            <div class="teaching-role">Teaching Assistant</div>
+            <div class="teaching-location">Addis Ababa, Ethiopia</div>
+            <p>Helped Ethiopian high school students learn to code as part of the <a href="https://www.addiscoder.com/" target="_blank">AddisCoder</a> program. Designed labs, exams, and helped over 50 students complete programming assignments in algorithms.</p>
+        </div>
+
+        <h3>Princeton University</h3>
+        <div class="teaching-table-wrapper">
+            <table class="teaching-table">
+                <thead>
+                    <tr>
+                        <th>Semester</th>
+                        <th>Role</th>
+                        <th>Course</th>
+                        <th>Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Spring 2026</td>
+                        <td>TA</td>
+                        <td>COS 511</td>
+                        <td>Theoretical Machine Learning (Elad Hazan)</td>
+                    </tr>
+                    <tr>
+                        <td>Fall 2025</td>
+                        <td>TA</td>
+                        <td>COS 521</td>
+                        <td>Advanced Algorithm Design (Huacheng Yu)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>UC Berkeley EECS Department</h3>
+        <p class="teaching-subtitle">Undergraduate Student Instructor (uGSI), 2021&ndash;2024</p>
+        <p>
+            Over 3 years, I served on course staff for 10 appointments across 7 unique courses, hosting discussions for a cumulative 300+ students,
+            writing exam questions and homework assignments, and holding office hours and review sessions.
+        </p>
+
+        <div class="teaching-table-wrapper">
+            <table class="teaching-table">
+                <thead>
+                    <tr>
+                        <th>Semester</th>
+                        <th>Role</th>
+                        <th>Course</th>
+                        <th>Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Summer 2024</td>
+                        <td>TA</td>
+                        <td>CS 70</td>
+                        <td>Discrete Mathematics &amp; Probability Theory</td>
+                    </tr>
+                    <tr>
+                        <td>Fall 2023</td>
+                        <td>TA</td>
+                        <td>EE 120</td>
+                        <td>Signals and Systems</td>
+                    </tr>
+                    <tr>
+                        <td>Summer 2023</td>
+                        <td>TA</td>
+                        <td>CS 70</td>
+                        <td>Discrete Mathematics &amp; Probability Theory</td>
+                    </tr>
+                    <tr>
+                        <td>Spring 2023</td>
+                        <td>TA</td>
+                        <td>CS 189</td>
+                        <td>Introduction to Statistical Machine Learning</td>
+                    </tr>
+                    <tr>
+                        <td>Fall 2022</td>
+                        <td>TA</td>
+                        <td>EECS 126</td>
+                        <td>Probability &amp; Random Processes</td>
+                    </tr>
+                    <tr>
+                        <td>Summer 2022</td>
+                        <td>TA</td>
+                        <td>CS 61C</td>
+                        <td>Great Ideas in Computer Architecture</td>
+                    </tr>
+                    <tr>
+                        <td>Spring 2022</td>
+                        <td>TA</td>
+                        <td>EECS 16B</td>
+                        <td>Designing Information Systems &amp; Devices II</td>
+                    </tr>
+                    <tr>
+                        <td>Spring 2022</td>
+                        <td>Reader</td>
+                        <td>EECS 126</td>
+                        <td>Probability &amp; Random Processes</td>
+                    </tr>
+                    <tr>
+                        <td>Fall 2021</td>
+                        <td>Tutor</td>
+                        <td>EECS 16B</td>
+                        <td>Designing Information Systems &amp; Devices II</td>
+                    </tr>
+                    <tr>
+                        <td>Summer 2021</td>
+                        <td>Tutor</td>
+                        <td>CS 61A</td>
+                        <td>Structure and Interpretation of Computer Programs</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>CS Mentors</h3>
+        <div class="teaching-entry">
+            <div class="teaching-role">Junior &amp; Content Mentor</div>
+            <div class="teaching-period">Aug 2020 &ndash; May 2021</div>
+            <p>Ran weekly volunteer sections of 5&ndash;6 college students, teaching data structures and discrete math.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Math Competitions / Outreach Section -->
+<section id="competitions">
+    <div class="container">
+        <h2>Math Outreach &amp; Competitions</h2>
+        <p class="section-intro">
+            I have been deeply involved in mathematical outreach, writing problems and organizing competitions
+            for high school and college students across the United States and internationally, including multiple
+            math competitions in China.
+        </p>
+
+        <div class="competitions-grid">
+            <div class="competition-card">
+                                <h3><a href="https://pumac.princeton.edu/" target="_blank">Princeton University Mathematics Competition (PUMaC)</a></h3>
+                                <div class="competition-role">Co-Director &amp; Co-Problem Czar</div>
+                                <p>Co-directing the competition and leading the problem-writing team for 450+ high school students.</p>
+            </div>
+
+            <div class="competition-card">
+                <h3><a href="https://berkeley.mt/" target="_blank">Berkeley Math Tournament (BMT)</a></h3>
+                <div class="competition-role">Problem Writer</div>
+                <p>Co-wrote the power rounds on <em>Error-Correcting Codes</em> (BMT 2022) and <em>Zero-Knowledge Proofs</em> (BMT 2023) for Berkeley's premier high school math tournament.</p>
+            </div>
+
+            <div class="competition-card">
+                <h3><a href="https://www.seedasdan.asia/en/bmt-en/" target="_blank">ASDAN Math Tournament (China)</a></h3>
+                <div class="competition-role">Problem Writer</div>
+                <p>Co-wrote the power round on <em>Computability</em> (AMT 2023) for ASDAN China's high school math tournament, reaching students across China.</p>
+            </div>
+
+            <div class="competition-card">
+                                <h3><a href="https://intercollegiatemathtournament.org/" target="_blank">Intercollegiate Mathematics Tournament (ICMT)</a></h3>
+                                <div class="competition-role">Problem Writer</div>
+                                <p>Writing and reviewing problems for the collegiate-level competition.</p>
+            </div>
+
+            <div class="competition-card">
+                                <h3><a href="https://www.johnshopkinsmathtournament.com/" target="_blank">Johns Hopkins Mathematics Tournament (JHMT)</a></h3>
+                                <div class="competition-role">Problem Writer</div>
+                                <p>Contributing problems for high school contestants.</p>
+            </div>
+
+            <div class="competition-card">
+                <h3><a href="https://puzzles.princeton.edu/" target="_blank">Princeton Puzzle Hunt</a></h3>
+                <div class="competition-role">Puzzle Writer</div>
+                <p>Writing puzzles for Princeton's puzzle hunt events.</p>
+            </div>
+
+            <div class="competition-card">
+                                <h3><a href="https://calico.cs.berkeley.edu/" target="_blank">California Informatics Competition (CALICO)</a></h3>
+                                <div class="competition-role">Problem Tester</div>
+                                <p>Writing and test-solving programming problems for Berkeley's high school competitive programming contest.</p>
+            </div>
+
+            <div class="competition-card">
+                <h3><a href="https://hkn.eecs.berkeley.edu/" target="_blank">Eta Kappa Nu (HKN)</a></h3>
+                <div class="competition-role">Officer</div>
+                <p>Developed the website for Berkeley's EECS honor society and volunteered as a tutor for college students.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Course Notes Section -->
+<section id="notes">
+    <div class="container">
+        <h2>Course Notes</h2>
+        <p class="section-intro">
+            Below are notes from courses I took at Princeton and UC Berkeley.
+            These are my personal notes and may contain errors &mdash; use at your own risk!
+        </p>
+
+        <h3>Princeton</h3>
+        <div class="notes-grid">
+            <div class="note-card">
+                <div class="note-code">COS 511</div>
+                <div class="note-title">Theoretical Machine Learning</div>
+                <a class="note-link" href="https://github.com/girantinas/my-notes/blob/master/COS511/lectures.pdf" target="_blank">View Notes</a>
+            </div>
+            <div class="note-card">
+                <div class="note-code">COS 521</div>
+                <div class="note-title">Advanced Algorithm Design</div>
+                <a class="note-link" href="https://github.com/girantinas/my-notes/blob/master/COS521/lectures.pdf" target="_blank">View Notes</a>
+            </div>
+            <div class="note-card">
+                <div class="note-code">COS 598</div>
+                <div class="note-title">Matrix Concentration and Applications</div>
+                <a class="note-link" href="https://github.com/girantinas/my-notes/blob/master/COS598_Mat_Conc/lectures.pdf" target="_blank">View Notes</a>
+            </div>
+        </div>
+
+        <h3>UC Berkeley</h3>
+        <div class="notes-grid">
+            <div class="note-card">
+                <div class="note-code">CS 170</div>
+                <div class="note-title">Efficient Algorithms and Intractable Problems</div>
+                <a class="note-link" href="https://github.com/girantinas/my-notes/blob/master/CS170/lectures.pdf" target="_blank">View Notes</a>
+            </div>
+            <div class="note-card">
+                <div class="note-code">CS 172</div>
+                <div class="note-title">Computability and Complexity</div>
+                <a class="note-link" href="https://github.com/girantinas/my-notes/blob/master/CS172/lectures.pdf" target="_blank">View Notes</a>
+            </div>
+            <div class="note-card">
+                <div class="note-code">CS 189</div>
+                <div class="note-title">Introduction to Machine Learning</div>
+                <a class="note-link" href="https://github.com/girantinas/my-notes/blob/master/CS189/lectures.pdf" target="_blank">View Notes</a>
+            </div>
+            <div class="note-card">
+                <div class="note-code">CS 191</div>
+                <div class="note-title">Quantum Information Science and Technology</div>
+                <a class="note-link" href="https://github.com/girantinas/my-notes/blob/master/CS191/lectures.pdf" target="_blank">View Notes</a>
+            </div>
+            <div class="note-card">
+                <div class="note-code">CS 270</div>
+                <div class="note-title">Combinatorial Algorithms and Data Structures</div>
+                <a class="note-link" href="https://github.com/girantinas/my-notes/blob/master/CS270/lectures.pdf" target="_blank">View Notes</a>
+            </div>
+            <div class="note-card">
+                <div class="note-code">CS 294-226</div>
+                <div class="note-title">Advanced Topics in Error-Correcting Codes</div>
+                <a class="note-link" href="https://github.com/girantinas/my-notes/blob/master/CS294-226/lectures.pdf" target="_blank">View Notes</a>
+            </div>
+            <div class="note-card">
+                <div class="note-code">EE 120</div>
+                <div class="note-title">Signals and Systems</div>
+                <a class="note-link" href="https://github.com/girantinas/my-notes/blob/master/EE120/lectures.pdf" target="_blank">View Notes</a>
+            </div>
+            <div class="note-card">
+                <div class="note-code">EECS 106A</div>
+                <div class="note-title">Introduction to Robotics</div>
+                <a class="note-link" href="https://github.com/girantinas/my-notes/blob/master/EECS106A/lectures.pdf" target="_blank">View Notes</a>
+            </div>
+            <div class="note-card">
+                <div class="note-code">EECS 126</div>
+                <div class="note-title">Probability and Random Processes</div>
+                <a class="note-link" href="https://github.com/girantinas/my-notes/blob/master/EECS126/lectures.pdf" target="_blank">View Notes</a>
+            </div>
+            <div class="note-card">
+                <div class="note-code">Math 128A</div>
+                <div class="note-title">Numerical Analysis</div>
+                <a class="note-link" href="https://github.com/girantinas/my-notes/blob/master/Math128a/lectures.pdf" target="_blank">View Notes</a>
+            </div>
+            <div class="note-card">
+                <div class="note-code">Math 202A</div>
+                <div class="note-title">Introduction to Topology and Analysis</div>
+                <a class="note-link" href="https://github.com/girantinas/my-notes/blob/master/Math202a/lectures.pdf" target="_blank">View Notes</a>
+            </div>
+            <div class="note-card">
+                <div class="note-code">Math 250A</div>
+                <div class="note-title">Groups, Rings, and Fields</div>
+                <a class="note-link" href="https://github.com/girantinas/my-notes/blob/master/Math250a/lectures.pdf" target="_blank">View Notes</a>
+            </div>
+            <div class="note-card">
+                <div class="note-code">PHYS 137A</div>
+                <div class="note-title">Quantum Mechanics</div>
+                <a class="note-link" href="https://github.com/girantinas/my-notes/blob/master/PHYS137A/lectures.pdf" target="_blank">View Notes</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+    <div class="container">
+        <h2>Technical Projects</h2>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Score AI</h3>
+                <div class="project-date">Jun 2023</div>
+                <p>Harnessed Meta's MusicGen model and OpenAI's GPT-4 to create novel soundtracks for writing and movie screenplay. Built with Django + React in 36 hours at the Berkeley AI Hackathon 2023.</p>
+                <div class="project-links">
+                    <a href="https://devpost.com/software/score-ai" target="_blank">[Devpost]</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Distributed Packed Memory Array</h3>
+                <div class="project-date">May 2023</div>
+                <p>Developed a novel graph streaming data structure for graphs with 10 billion+ nodes distributed across multiple servers. Written in C++ and benchmarked against existing solutions.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Matrix Multiplication Kernel</h3>
+                <div class="project-date">Mar 2023</div>
+                <p>Optimized the <code>dgemm</code> routine in C++ using OpenMP, cache blocking, microkernels, and communication-minimizing algorithms.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Functional Fuzzing Generative DSL</h3>
+                <div class="project-date">Nov 2022</div>
+                <p>A functional, random generative API for QuickCheck-like hardware fuzzing. Supports monadic composition, recursion, and introspection/correlation of random decisions.</p>
+                <div class="project-links">
+                    <a href="https://github.com/girantinas/randomapi" target="_blank">[GitHub]</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Gitlet</h3>
+                <div class="project-date">Mar 2021</div>
+                <p>Implemented a Git-like version control system in Java with file persistence, including support for merging and splitting multiple branches and remotes.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Blog Section -->
+<section id="blog">
+    <div class="container">
+        <h2>Blog</h2>
+        <p class="section-intro">
+            Occasional thoughts on math, CS theory, machine learning, and whatever else is on my mind.
+        </p>
+        <div class="blog-placeholder">
+            <p>Posts coming soon. Stay tuned!</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <p>&copy; 2026 Rohit Agarwal</p>
+            <div class="footer-links">
+                <a href="mailto:ra1336@cs.princeton.edu">Email</a>
+                <a href="https://scholar.google.com/citations?user=lYEHg98AAAAJ&hl=en" target="_blank">Scholar</a>
+                <a href="https://github.com/girantinas" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/rohit-agarwal-b647951ba/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
